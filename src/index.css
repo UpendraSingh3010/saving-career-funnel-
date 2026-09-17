@@ -71,3 +71,65 @@
   border-color: rgba(0, 255, 136, 0.2);
 }
 
+/* Site Credits */
+.poweredBy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+.light .poweredBy {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.creditLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 4px;
+  border-radius: 6px;
+  opacity: 0.7;
+  transition: 0.35s ease;
+}
+
+.creditLogo:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(253, 181, 20, 0.5);
+}
+
+.creditLogo img {
+  height: 12px;
+  width: auto;
+  display: block;
+}
+
+.divider {
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.light .divider {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .poweredBy {
+    padding: 6px 10px;
+    gap: 8px;
+  }
+
+  .creditLogo img {
+    height: 10px;
+  }
+}
+

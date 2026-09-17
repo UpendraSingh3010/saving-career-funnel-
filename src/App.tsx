@@ -12,6 +12,7 @@ import { PricingRulesSection } from './components/PricingRulesSection';
 import { MentorSection } from './components/MentorSection';
 import { AudienceSection } from './components/AudienceSection';
 import { FaqCtaSection } from './components/FaqCtaSection';
+import { Footer } from './components/Footer';
 import { RegistrationModal } from './components/RegistrationModal';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -114,6 +115,12 @@ export default function App() {
           onOpenRegister={() => setIsRegisterOpen(true)}
         />
       </main>
+
+      {/* Comprehensive Brand Footer & Site Credits */}
+      <Footer
+        darkMode={darkMode}
+        onOpenRegister={() => setIsRegisterOpen(true)}
+      />
 
       {/* Floating Section Tracker Pill (Bottom Left on Desktop) */}
       <div className="hidden lg:flex fixed bottom-6 left-6 z-40 items-center gap-2 px-3 py-1.5 rounded-full border border-[#222222] bg-[#0d0d0d]/80 backdrop-blur-md text-xs font-mono-code text-[#8e8e93] shadow-lg">

@@ -169,19 +169,6 @@ export const FaqCtaSection: React.FC<FaqCtaSectionProps> = ({
             </p>
           </div>
         </div>
-
-        {/* Brand Footer */}
-        <footer className="mt-20 pt-8 border-t border-[#222222]/50 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono-code text-[#8e8e93]">
-          <div className="flex items-center gap-3">
-            <SavingCareersLogo showText={true} />
-          </div>
-          <div className="text-center sm:text-right">
-            <div>Saving.Careers × Nikhil Sir — Learn it. Apply it. Prove it.</div>
-            <div className="text-[10px] text-[#666666] mt-0.5">
-              All rights reserved. Digital Marketing Challenge 2025–2026.
-            </div>
-          </div>
-        </footer>
       </div>
     </section>
   );
